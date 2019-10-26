@@ -5,6 +5,7 @@ const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'src');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const MiniCssExtractPluginConfig = new MiniCssExtractPlugin({
   filename: '[name].css',
@@ -55,5 +56,11 @@ module.exports = {
   plugins: [
     HtmlWebpackPluginConfig,
     MiniCssExtractPluginConfig,
+    new CopyWebpackPlugin([
+      {
+        from: `${APP_DIR}/assets/`,
+        to: 'assets/',
+      },
+    ]),
   ],
 };
