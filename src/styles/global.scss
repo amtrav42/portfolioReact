@@ -7,7 +7,29 @@ $color-dark-blue: #1F80CD;
 $color-bright-blue: #65F0D6;
 $color-bright-green: #79DD68;
 
-body{
+body {
   background: $color-pale-blue;
   font-family: $font-body;
+}
+// Global Font Styling
+p {
+  font-size: 14px;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+ font-family: $font-headings;
+ color: $colour-dark-green;
+ font-size: 2rem;
+}
+// Hyperlink styling
+a {
+  color: $colour-dark-green;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: $color-bright-green;
+  font-style: italic;
 }
