@@ -3,12 +3,16 @@ import NavLink from "../NavLink";
 
 const navLinkList = [
   {
-    href: "gallery",
-    label: "Gallery"
+    href: "/",
+    label: "Home"
   },
   {
-    href: "mapGenerator",
-    label: "Map Generator"
+    href: "code",
+    label: "Code"
+  },
+  {
+    href: "write",
+    label: "Write"
   },
   {
     href: "about",
@@ -18,10 +22,6 @@ const navLinkList = [
     href: "contact",
     label: "Contact"
   },
-  {
-    href: "https://www.redbubble.com/people/amaltr42?asc=u",
-    label: "Shop"
-  }
 ];
 
 class Nav extends Component {
