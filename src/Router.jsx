@@ -18,11 +18,11 @@ export default () => (
       <Route path="/contact">
         <Template location="contact" />
       </Route>
-      <Route path="/gallery">
-        <Template location="gallery" />
+      <Route path="/code">
+        <Template location="code" />
       </Route>
-      <Route path="/mapGenerator">
-        <Template location="mapGenerator" />
+      <Route path="/write">
+        <Template location="write" />
       </Route>
     </Switch>
   </Router>
