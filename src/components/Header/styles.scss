@@ -1,11 +1,4 @@
-$font-headings: 'Mansalva', cursive;
-$font-body: 'Frank Ruhl Libre', serif;
-$color-main: gray;
-$colour-dark-green: #0CB889;
-$color-pale-blue: #9AE4B7;
-$color-dark-blue: #1F80CD;
-$color-bright-blue: #65F0D6;
-$color-bright-green: #79DD68;
+@import '../../styles/variables';
 
 .header{
   background: $color-bright-blue;
