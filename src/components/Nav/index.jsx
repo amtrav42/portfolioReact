@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavLink from "../NavLink";
+import './styles.scss';
 
 const navLinkList = [
   {
@@ -27,7 +28,7 @@ const navLinkList = [
 class Nav extends Component {
   render(){
     return (
-      <nav>
+      <nav className="nav">
         {navLinkList.map(
           function (currentLink, i){
             return <NavLink key={`navLink${i}`} href={currentLink.href} label={currentLink.label} />

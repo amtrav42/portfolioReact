@@ -7,7 +7,7 @@ class NavLink extends Component {
     const { href, label } = this.props;
     return (
       <Link to={href}>
-        <div className="navLinks">
+        <div className="navLink">
           {label}
         </div>
       </Link>
